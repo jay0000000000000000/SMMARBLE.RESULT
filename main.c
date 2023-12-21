@@ -17,8 +17,10 @@
 
 
 
+
+
 //board configuration parameters
-static int board_nr;
+static int board_nr; //
 static int food_nr;
 static int festival_nr;
 

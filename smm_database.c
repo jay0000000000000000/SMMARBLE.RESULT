@@ -186,7 +186,9 @@ int smmdb_deleteData(int list_nr, int index)
     
     return 0;
 }
-
+         
+         
+         
 
 //functions for list observation -----------------------------
 

@@ -58,14 +58,17 @@ void smmObj_genObject(char* name, smmObjType_e objType, int type, int credit, in
     ptr->credit = credit;
     ptr->energy = energy;
     ptr->grade = grade;
-    
+       
     return ptr;
+    
 }
 
 //3. 관련 함수 변경 
-char* smmObj_getNodeName(int* node_nr)
+char* smmObj_getNodeName(int* obj)
 {
-    return smm_node[node_nr].name;
+    smmObject_t* ptr = (smmObject_t*)obj;
+    
+    return ptr->name;
 }
 
 //3. 관련 함수 변경 
